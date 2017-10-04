@@ -14,7 +14,7 @@ public class Teste {
 	}
 
 	@Test
-	public void segundoteste() {
+	public void segundotest() {
 		Gerente gerente = new Gerente();
 		gerente.Senha(4321);
 		assertEquals(gerente.autentica(4322), false);
