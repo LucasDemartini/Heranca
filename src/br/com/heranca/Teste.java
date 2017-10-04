@@ -37,7 +37,7 @@ public class Teste {
 	@Test
 	public void testetelefone() {
 		Funcionarios funcionario = new Funcionarios();
-		funcionario.Telefone("98765432");
-		assertEquals(funcionario.GetTelefone(), "98765432");
+		funcionario.Telefone("98765436");
+		assertEquals(funcionario.GetTelefone(), "98765436");
 	}
 }
