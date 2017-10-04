@@ -32,7 +32,12 @@ public class Teste {
 		Gerente gerente = new Gerente();
 		gerente.Cpf("1122133245");
 		assertEquals(gerente.Getcpf(), "1122133245");
-		
 	}
 
+	@Test
+	public void testetelefone() {
+		Funcionarios funcionario = new Funcionarios();
+		funcionario.Telefone("98765432");
+		assertEquals(funcionario.GetTelefone(), "98765432");
+	}
 }
