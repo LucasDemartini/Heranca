@@ -7,30 +7,25 @@ import org.junit.Test;
 public class Teste {
 
 	@Test
-	public void primeiroteste() {
+	public void testesenhagerentet() {
 		Gerente gerente = new Gerente();
 		gerente.Senha(4444);
-		assertEquals(gerente.autentica(4444), true);
+		assertTrue(gerente.autentica(4444));
 	}
 
 	@Test
-	public void segundotest() {
+	public void testesenhagerentef() {
 		Gerente gerente = new Gerente();
 		gerente.Senha(4321);
-		assertEquals(gerente.autentica(4322), false);
+		assertFalse(gerente.autentica(4322));
 	}
 
 	@Test
 	public void terceiroteste() {
 		Gerente gerente = new Gerente();
 		gerente.Nome("Jonas");
-		assertEquals(gerente.GetNome(), "Jonas");
-	}
-	
-	@Test 
-	public void quartoteste() {
-		Gerente gerente = new Gerente();
 		gerente.Cpf("1122133245");
+		assertEquals(gerente.GetNome(), "Jonas");
 		assertEquals(gerente.Getcpf(), "1122133245");
 	}
 
